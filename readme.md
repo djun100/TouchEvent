@@ -148,6 +148,7 @@ ACTION_DOWN 的确如此,ACTION_UP却在`GrandparentView`分发后立刻执行�
  由于在`ParentView`中中断事件分发.于是在传到`ParentView`中直接调用了`ParentView`的`onTouchEvent`,然而`ParentView`并没有消费此事件于是反向询问直到最后.
  
 
-
+总结：
+当一个view为clickable 或longclickable，他的onTouchEvent会返回true丢掉该event。
 
 

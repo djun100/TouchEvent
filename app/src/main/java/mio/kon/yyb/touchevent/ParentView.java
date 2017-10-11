@@ -47,15 +47,15 @@ public class ParentView extends ViewGroup {
     @Override
     public boolean dispatchTouchEvent(MotionEvent ev) {
         L.d ("ParentView dispatchTouchEvent  " + EventUtil.getEventName (ev.getAction ()));
-        return true;
-//        return super.dispatchTouchEvent (ev);
+//        return true;//丢掉此event，不再往任何函数走
+        return super.dispatchTouchEvent (ev);
     }
 
     @Override
     public boolean onInterceptTouchEvent(MotionEvent ev) {
         L.d ("ParentView onInterceptTouchEvent  " + EventUtil.getEventName (ev.getAction ()));
-//        return true;
-        return super.onInterceptTouchEvent (ev);
+        return true;
+//        return super.onInterceptTouchEvent (ev);
     }
 
 

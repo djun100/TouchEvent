@@ -12,13 +12,18 @@
 
 
     <mio.kon.yyb.touchevent.GrandparentView
+        android:id="@+id/mGrandparentView"
         android:layout_width="300dp"
         android:layout_height="300dp">
 
         <mio.kon.yyb.touchevent.ParentView
+            android:id="@+id/mParentView"
             android:layout_width="150dp"
             android:layout_height="150dp">
+
             <mio.kon.yyb.touchevent.ChildView
+                android:tag="-click"
+                android:id="@+id/mChildView"
                 android:layout_width="50dp"
                 android:layout_height="50dp"/>
         </mio.kon.yyb.touchevent.ParentView>
